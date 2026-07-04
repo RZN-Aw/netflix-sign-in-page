@@ -15,7 +15,7 @@ setuser(event.target.value)
 setpass(event.target.value)
   }
   function check(){
-let logindetails=axios.get(`http://localhost:4000/login?username=${user}&password=${pass}`)
+let logindetails=axios.get(`https://netflix-sign-in-page.onrender.com/login?username=${user}&password=${pass}`)
 logindetails.then((data)=>{
   if(data.data==true){
     navigate("/success")
